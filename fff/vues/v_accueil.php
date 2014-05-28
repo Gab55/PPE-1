@@ -38,7 +38,9 @@
 						<div class="ch-item ch-img-1">
 							<div class="ch-info">
 								<h3>Gestion Club</h3>
+								<div class="pt-page pt-page-1">
 								<p><a href="index.php?uc=GestionAdmin&action=VoirClubs">Ajouter, modifer ou supprimer un club</a></p>
+							    </div>
 							</div>
 						</div>
 					</li>

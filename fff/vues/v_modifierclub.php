@@ -20,7 +20,7 @@
         </p>
 
         <p>
-            <input type="submit" value="Valider" name="valider">
+            <input type="submit" id='trigger' value="Valider" name="valider">
             
         </p>
     </p>

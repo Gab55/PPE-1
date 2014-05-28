@@ -1,5 +1,6 @@
 <form method="POST" action="index.php?uc=GestionAdmin&action=ModifierJoueur">
     <fieldset>
+               <legend>Mofication des information du joueur</legend>
         <p>
             <label for="nom">Nom :</label>
             <input id="nom" type="text" name="nom" value="<?php echo $nom ?>" size="10" maxlength="10" style=" width: auto">
