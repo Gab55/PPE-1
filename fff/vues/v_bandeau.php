@@ -10,9 +10,11 @@
         <!-- NAVIGATION BAR-->
         <div id="nav">
             <ul class="lavaLamp" id="menu">
-                <li><a class="active" id="trigger3" href="index.php?uc=accueil">Retour accueil</a></li>
+                <li><a class="active" href="index.php?uc=accueil">Accueil</a></li>
+                <li><a href="index.php?uc=GestionAdmin&action=VoirClubs">Clubs</a></li>
+                <li><a href="index.php?uc=GestionAdmin&action=VoirJoueurs">Joueurs</a></li>
                 <?php  if (isset($_SESSION['admin'])){ // Si on est connecté on affiche deconnexion
-                            echo "<li><a id='trigger3' href=\"index.php?uc=GestionAdmin&action=deconnexion\">Déconnexion</a></li>";
+                            echo "<li><a href=\"index.php?uc=GestionAdmin&action=deconnexion\">Déconnexion</a></li>";
                       }?>
 
             </ul>

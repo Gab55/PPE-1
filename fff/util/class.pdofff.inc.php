@@ -65,17 +65,17 @@ class Pdofff
     /*
     * Prend en parametre le nom, ville, nom et prenom du dirigeant pour crée un nouveau club
     */
-    public function ajouterclub ($nom, $ville, $nomdirigeant)
+    public function ajouterclub ($nom, $ville, $nomdirigeant, $prenomdirigeant)
     {
-        $req = "INSERT INTO clubs (idc, nom, ville, nomdirigeant) VALUES ('','".$nom."', '".$ville."', '$nomdirigeant');";
+        $req = "INSERT INTO clubs (idc, nom, ville, nomdirigeant, prenomdirigeant) VALUES ('','".$nom."', '".$ville."', '$nomdirigeant', '".$prenomdirigeant."');";
         Pdofff::$monPdo->query($req);
     }
     /*
     * Prend en parametre les nouvelles informations du club et met à jour la table
     */
-    public function modifierclub($idc, $nom, $ville, $nomdirigeant)
+    public function modifierclub($idc, $nom, $ville, $nomdirigeant, $prenomdirigeant)
     {
-        $req = "UPDATE clubs SET nom='".$nom."', ville='".$ville."', nomdirigeant = '".$nomdirigeant."', where idc='".$idc."';";
+        $req = "UPDATE clubs SET nom='".$nom."', ville='".$ville."', nomdirigeant = '".$nomdirigeant."', prenomdirigeant='".$prenomdirigeant."' where idc='".$idc."';";
         Pdofff::$monPdo->exec($req);
     }
     /*
@@ -119,22 +119,29 @@ class Pdofff
     /*
     * Ajoute un joueur dans la table joueur avec les informations passé en parametre puis l'inscris dans la table inscrire pour l'historique
     */
-    public function ajouterjoueur ($nom,$prenom, $idc, $idcat)
+    public function ajouterjoueur ($nom,$prenom, $datenaiss, $nlicence, $idc, $idcat)
     {
-        $req = "INSERT INTO joueurs (idj, nom, prenom, idc, idcat) VALUES ('','".$nom."', '".$prenom."', '".$idc."','".$idcat."');";
+        $req = "INSERT INTO joueurs (idj, nom, prenom, datenaiss, nlicence, idc, idcat) VALUES ('','".$nom."', '".$prenom."', '$datenaiss', '".$nlicence."','".$idc."','".$idcat."');";
         Pdofff::$monPdo->query($req);
-        
+        $req = "INSERT INTO inscrire (datei, idc, idj) VALUES ('".date("Y-n-j")."', '".$idc."', (SELECT MAX(idj) FROM joueurs));"; // On utilise ici la fonction date() de php pour récuperer la date du jour
+        Pdofff::$monPdo->query($req);
     }
     /*
     * Modifier un joueur
      *  Recupere l'id du club du joueur pour le comparer avec le club entrer dans la vue modifier joueur afin de l'inscrire ou non dans l'historique du joueur
      *  Met à jour la ligne du joueur dans la table joueurs
     */
-    public function modifierjoueur($idj, $nom,$prenom, $idcat, $idc)
+    public function modifierjoueur($idj, $nom,$prenom, $datenaiss, $nlicence, $idcat, $idc)
     {
         $req = "SELECT idc FROM joueurs WHERE idj='".$idj."';";
         $res = Pdofff::$monPdo->query($req);
-
+        $oldidc = $res->fetchAll();
+        $req = "UPDATE joueurs SET nom='".$nom."', prenom='".$prenom."', datenaiss='".$datenaiss."', nlicence='".$nlicence."', idcat='".$idcat."' where idj='".$idj."';";
+        Pdofff::$monPdo->exec($req);
+        if ($oldidc[0]['idc'] != $idc){
+            $req = "INSERT INTO inscrire (datei, idc, idj) VALUES ('".date("Y-n-j")."', '".$idc."', '".$idj."');"; //Utilisation de date()
+            Pdofff::$monPdo->exec($req);
+        }
     }
     /*
     * Recupere les informations du joueur passé en parametre

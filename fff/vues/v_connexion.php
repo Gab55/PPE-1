@@ -1,26 +1,16 @@
-
-<!DOCTYPE html>
-
-    <link rel="stylesheet" href="css/style2.css" media="screen" type="text/css" />
-
-</head>
-
-<body>
-
-  <span href="#" class="button" id="toggle-login">Connection</span>
-
-<div id="login">
-  <div id="triangle"></div>
-  <h1>Connection</h1>
-  <form method="POST" action="index.php?uc=GestionAdmin&action=connexion">
+<form method="POST" action="index.php?uc=GestionAdmin&action=connexion">
+    <fieldset>
+        <legend>Connexion Administrateur</legend>
+        <p>
             <label for="login">Login : </label>
-            <input id="login" type="text" name="login" style="width: 368px; height: 35px;" >
+            <input id="login" type="text" name="login" value="Votre Login" size="30" maxlength="45">
+        </p>
+        <p>
             <label for="pass">Mot de passe : </label>
-            <input id="pass" type="password" name="pass" style="height: 15px;">
+            <input id="pass" type="password" name="pass" value="Votre Mot de Passe" size="30" maxlength="45">
+        </p>
+        <p>
             <input type="submit" value="Valider" name="valider">
-  </form>
-</div>
-
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-
-  <script src="js/index.js"></script>
+            <input type="reset" value="Annuler" name="annuler">
+        </p>
+</form>

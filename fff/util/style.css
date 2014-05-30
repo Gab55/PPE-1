@@ -9,8 +9,8 @@ body {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    background-image: url(../images/bg.jpg);
-    background-repeat: #;
+    background-image: url(../images/blue_bground.jpg);
+    background-repeat: repeat-x;
 }
 /* Titre et Lien*/
 h1 {
@@ -30,7 +30,7 @@ h2 {
 
 a {
     text-decoration:none;
-    color:#FF0000;
+    color:#5b9019;
 }
 
 a:hover {
@@ -54,7 +54,7 @@ a img { border: none }
     padding:0;
     width:960px;
     height:83px;
-    background:#;
+    background:url(../images/blue_top_bground.jpg) no-repeat top left;
     float:left;
 }
 
@@ -63,7 +63,7 @@ a img { border: none }
     padding:0;
     width:199px;
     height:34px;
-    background:#;
+    background:url(../images/blue_logo.png) no-repeat top left;
     float:left;
 }
 
@@ -230,58 +230,3 @@ a img { border: none }
 .ds_cell:hover {
     background-color: #F3F3F3;
 } /* This hover code won't work for IE */
-
-#trigger {
-    background: #000000;
-    background: -moz-linear-gradient(top, #161616 0%, #000000 100%);
-    background: -webkit-linear-gradient(top, #161616 0%,#000000 100%);
-    border-left:1px solid #111; border-top:1px solid #111; border-right:1px solid #333; border-bottom:1px solid #333; 
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 0.8em;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-align: center;
-    color: #fff;
-    padding: 0px;
-    border-radius: 3px;
-    display: block;
-    margin: 0 auto;
-    height: 30px;
-    margin-top: 40px;
-    width: 150px;
-}
-#trigger2 {
-    background: #000000;
-    background: -moz-linear-gradient(top, #161616 0%, #000000 100%);
-    background: -webkit-linear-gradient(top, #161616 0%,#000000 100%);
-    border-left:1px solid #111; border-top:1px solid #111; border-right:1px solid #333; border-bottom:1px solid #333; 
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 0.8em;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    border-radius: 3px;
-    display: block;
-    margin: 60px auto;
-    width: 140px;
-}
-
-#trigger3 {
-    background: #000000;
-    background: -moz-linear-gradient(top, #161616 0%, #000000 100%);
-    background: -webkit-linear-gradient(top, #161616 0%,#000000 100%);
-    border-left:1px solid #111; border-top:1px solid #111; border-right:1px solid #333; border-bottom:1px solid #333; 
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 0.8em;
-    text-decoration: none;
-    text-transform: lowercase;
-    text-align: center;
-    color: #fff;
-    padding: 0px;
-    border-radius: 3px;
-    display: block;
-    margin: 60px auto;
-    width: 140px;
-}
