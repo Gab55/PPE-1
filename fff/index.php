@@ -1,6 +1,6 @@
 <?php
-session_start(); // On démarre la session
-// On inclu les fichiers dont on a besoin
+session_start(); // On début de la session
+
 require_once("util/class.pdofff.inc.php");
 include("vues/v_entete.php") ;
 include("vues/v_bandeau.php") ;

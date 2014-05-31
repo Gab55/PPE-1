@@ -23,33 +23,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="425">
+            <state line="97" column="11" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0" vertical-offset="4059" max-vertical-offset="4964">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c_GestionAdmin.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <file leaf-file-name="v_ajouterclub.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/v_ajouterclub.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5" selection-start="2" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3077">
+            <state line="1" column="0" selection-start="75" selection-end="85" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class.pdofff.inc.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="v_clubfiche.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/v_clubfiche.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="807" selection-end="807" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
+              <folding>
+                <marker date="1401546255561" expanded="true" signature="555:567" placeholder="..." />
+                <marker date="1401546255561" expanded="true" signature="782:794" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.pdofff.inc.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="33" selection-start="1626" selection-end="1626" vertical-scroll-proportion="-5.8846154" vertical-offset="816" max-vertical-offset="3196">
+            <state line="16" column="57" selection-start="450" selection-end="450" vertical-scroll-proportion="0.3105023" vertical-offset="0" max-vertical-offset="2482">
               <folding>
-                <marker date="1381262341299" expanded="true" signature="1649:1668" placeholder="select * fro..clubs..." />
-                <marker date="1381262341299" expanded="true" signature="3218:3239" placeholder="select * fro..joueurs..." />
-                <marker date="1381262341299" expanded="true" signature="6124:6167" placeholder="SELECT idcat..categories..." />
+                <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+                <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+                <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v_entete.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/v_entete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v_joueurfiche.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/v_joueurfiche.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="2" selection-start="871" selection-end="871" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="544">
+              <folding>
+                <marker date="1401546424973" expanded="false" signature="844:856" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v_joueurs.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/v_joueurs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="0" selection-start="1185" selection-end="1185" vertical-scroll-proportion="-5.8846154" vertical-offset="765" max-vertical-offset="1666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v_modifierclub.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/v_modifierclub.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="14" selection-start="304" selection-end="304" vertical-scroll-proportion="-7.6538463" vertical-offset="56" max-vertical-offset="969">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="v_pied.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vues/v_pied.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="7" selection-start="47" selection-end="47" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,28 +133,31 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/date.js" />
-        <option value="$PROJECT_DIR$/controleurs/c_GestionAdmin.php" />
         <option value="$PROJECT_DIR$/js/calendrier.js" />
         <option value="$PROJECT_DIR$/util/style.css" />
-        <option value="$PROJECT_DIR$/util/class.pdofff.inc.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/vues/v_ajouterclub.php" />
+        <option value="$PROJECT_DIR$/controleurs/c_GestionAdminTestU" />
+        <option value="$PROJECT_DIR$/controleurs/Test.php" />
+        <option value="$PROJECT_DIR$/controleurs/c_GestionAdmin.php" />
         <option value="$PROJECT_DIR$/vues/v_ajouterjoueur.php" />
         <option value="$PROJECT_DIR$/vues/v_bandeau.php" />
         <option value="$PROJECT_DIR$/vues/v_clubfiche.php" />
         <option value="$PROJECT_DIR$/vues/v_clubs.php" />
+        <option value="$PROJECT_DIR$/vues/v_connexion.php" />
         <option value="$PROJECT_DIR$/vues/v_entete.php" />
         <option value="$PROJECT_DIR$/vues/v_joueurfiche.php" />
         <option value="$PROJECT_DIR$/vues/v_joueurs.php" />
         <option value="$PROJECT_DIR$/vues/v_modifierclub.php" />
         <option value="$PROJECT_DIR$/vues/v_modifierjoueur.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/util/class.pdofff.inc.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
+    <option name="x" value="22" />
+    <option name="width" value="1898" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -115,6 +186,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -129,7 +201,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FFF" />
+              <option name="myItemId" value="fff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -139,7 +211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FFF" />
+              <option name="myItemId" value="fff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -153,7 +225,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FFF" />
+              <option name="myItemId" value="fff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -167,7 +239,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="fff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="FFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FFF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fff" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -177,21 +277,25 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Test PPE/PPE4 Litwinczuk - Silva/compo" />
+    <property name="options.lastSelected" value="Configurable.PHP.PHPUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.Test">
+    <configuration default="false" name="c_GestionAdminTestU" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/controleurs/c_GestionAdminTestU">
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
+      <TestRunner file="$PROJECT_DIR$/controleurs/c_GestionAdminTestU" scope="Class" />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -203,9 +307,38 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="Test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner class="Test" file="$PROJECT_DIR$/controleurs/Test.php" scope="Class" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.Test" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.c_GestionAdminTestU" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.c_GestionAdminTestU" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bb733b3d-9c15-4714-8c06-bbdb2e9fa6b2" name="Default" comment="" />
@@ -215,18 +348,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="22" y="0" width="1898" height="1040" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3358051" sideWeight="0.6713092" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13336876" sideWeight="0.6713092" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -253,102 +386,359 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="12" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.31936416" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_ajouterclub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.61445785" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_bandeau.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="99" selection-start="639" selection-end="639" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_clubfiche.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="80" selection-start="86" selection-end="86" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_clubs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="63" selection-start="194" selection-end="194" vertical-scroll-proportion="0.05120482" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_entete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="63" selection-start="754" selection-end="754" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_joueurfiche.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="79" selection-start="921" selection-end="921" vertical-scroll-proportion="-15.076923" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_joueurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="66" selection-start="644" selection-end="644" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_pied.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="85" selection-start="263" selection-end="263" vertical-scroll-proportion="0.17921686" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_modifierclub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="76" selection-start="152" selection-end="152" vertical-scroll-proportion="0.02560241" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_modifierjoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="151" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-0.100903615" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/v_ajouterjoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="11" selection-start="1646" selection-end="1684" vertical-scroll-proportion="0.92168677" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="425">
+        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="53" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="33" selection-start="1626" selection-end="1626" vertical-scroll-proportion="-5.8846154" vertical-offset="816" max-vertical-offset="3196">
+        <state line="57" column="84" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="2601">
           <folding>
-            <marker date="1381262341299" expanded="true" signature="1649:1668" placeholder="select * fro..clubs..." />
-            <marker date="1381262341299" expanded="true" signature="3218:3239" placeholder="select * fro..joueurs..." />
-            <marker date="1381262341299" expanded="true" signature="6124:6167" placeholder="SELECT idcat..categories..." />
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="2" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3077">
+        <state line="14" column="34" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="3094">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2584">
+          <folding>
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2584">
+          <folding>
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2584">
+          <folding>
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="5" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2584">
+          <folding>
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="1" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="33" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="3264">
+          <folding>
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="2" selection-end="5" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3094">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="33" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="3264">
+          <folding>
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="53" selection-start="501" selection-end="501" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_ajouterjoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="12" selection-start="1478" selection-end="1478" vertical-scroll-proportion="-29.23077" vertical-offset="90" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_bandeau.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_clubs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-43.153847" vertical-offset="0" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_connexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="682" selection-end="682" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_modifierjoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="32" selection-start="39" selection-end="39" vertical-scroll-proportion="11.961538" vertical-offset="345" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_pied.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="7" selection-start="47" selection-end="47" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.03868032" vertical-offset="0" max-vertical-offset="879">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="11" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_ajouterclub.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="75" selection-end="85" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_modifierclub.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="14" selection-start="304" selection-end="304" vertical-scroll-proportion="-7.6538463" vertical-offset="56" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_clubfiche.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="807" selection-end="807" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="459">
+          <folding>
+            <marker date="1401546255561" expanded="true" signature="555:567" placeholder="..." />
+            <marker date="1401546255561" expanded="true" signature="782:794" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_entete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_joueurfiche.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="2" selection-start="871" selection-end="871" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="544">
+          <folding>
+            <marker date="1401546424973" expanded="false" signature="844:856" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vues/v_joueurs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1185" selection-end="1185" vertical-scroll-proportion="-5.8846154" vertical-offset="765" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controleurs/c_GestionAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="23" selection-start="4963" selection-end="4963" vertical-scroll-proportion="3.2408676" vertical-offset="0" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/class.pdofff.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="57" selection-start="450" selection-end="450" vertical-scroll-proportion="0.3105023" vertical-offset="0" max-vertical-offset="2482">
+          <folding>
+            <marker date="1401546561963" expanded="true" signature="1022:1041" placeholder="select * fro..clubs..." />
+            <marker date="1401546561963" expanded="true" signature="2057:2078" placeholder="select * fro..joueurs..." />
+            <marker date="1401546561963" expanded="true" signature="3391:3434" placeholder="SELECT idcat..categories..." />
+          </folding>
         </state>
       </provider>
     </entry>

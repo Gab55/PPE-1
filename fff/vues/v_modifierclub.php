@@ -1,25 +1,52 @@
 <form method="POST" action="index.php?uc=GestionAdmin&action=ModifierClub">
-    <fieldset><!----On recupere a chaque fois la valeur envoyé du controleur--->
+<?php
+foreach($LeClub as $unClub) // Affiche la liste des clubs
+{
+    $idc = $unClub['idc'];
+    $club = $unClub['nom'];
+    $nomdirigeant = $unClub['nomdirigeant'];
+    $ville = $unClub['ville'];
+    
+    ?>
+
+
+
+
+
+    <fieldset>
+
+           <legend>Modification des informations du club</legend>
+
         <p>
             <label for="nom">Nom :</label>
-            <input id="nom" type="text" name="nom" value="<?php echo $nom ?>" size="10" maxlength="10" style=" width: auto">
+            <input id="nom" type="text" name="nom"  size="10" maxlength="10" style=" width: auto">
+        <p>
+
         <p>
             <label for="ville">Ville :</label>
-            <input id="ville" type="text" name="ville" value="<?php echo $ville ?>" size="10" maxlength="10">
+            <input id="ville" type="text" name="ville"  size="10" maxlength="10">
         </p>
+
         <p>
             <label for="nomdirigeant">Nom du dirigeant :</label>
-            <input id="nomdirigeant" type="text" name="nomdirigeant" value="<?php echo $nomdirigeant ?>" size="10" maxlength="10">
+            <input id="nomdirigeant" type="text" name="nomdirigeant" size="10" maxlength="10">
+           
         </p>
+
+<p>
+ <input id="club" type="hidden" value=<?php echo $idc ?>; name="club">
+ </p>
+
+
         <p>
-            <label for="prenomdirigeant">Prenom du dirigeant :</label>
-            <input id="prenomdirigeant" type="text" name="prenomdirigeant" value="<?php echo $prenomdirigeant ?>" size="10" maxlength="10">
-            <input id="club" type="hidden" name="club" value="<?php echo $idc ?>">
+            <input type="submit" id='trigger' value="Valider" name="valider">
+            
         </p>
-        <p>
-            <input type="submit" value="Valider" name="valider">
-            <input type="reset" value="Annuler" name="annuler">
-        </p>
-        </p>
-    </fieldset>
+    </p>
+</p>
+        
 </form>
+<?php
+}
+?>
+  </fieldset>

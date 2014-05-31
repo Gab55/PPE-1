@@ -1,25 +1,25 @@
 <?php
-if (isset($_REQUEST['action'])){ // Si il n'y a pas d'action renseigné, on redirige vers la connexion
+if (isset($_REQUEST['action'])){
     $action = $_REQUEST['action'];
 } else {
     $action = 'connexion';
 }
-if (!isset($_SESSION['admin'])){    // Si on n'est pas connecté, on redirige vers la connexion
+if (!isset($_SESSION['admin'])){
     $action = 'connexion';
 }
 switch($action){
     case 'connexion':
     {
-        if(isset($_POST['login']) && (isset($_POST['pass']))){ // Si le login et mdp sont rentré, on récupere les données dans 2 variables
+        if(isset($_POST['login']) && (isset($_POST['pass']))){
             $log = $_POST['login'];
             $mdp = $_POST['pass'];
-            //il faut se connecter à la BD
-            $resu = $pdo->testLogAdmin($log, $mdp); // On test le couple login/mdp
+
+            $resu = $pdo->testLogAdmin($log, $mdp);
 
             if($resu[0] == 0){
-                header("Location: /fff/index.php?uc=GestionAdmin&action=connexion"); // Si le couple login/mdp est faux on redirige vers connexion
+                header("Location: /fff/index.php?uc=GestionAdmin&action=connexion");
             }else{
-                $_SESSION['admin']=1; // Sinon on est connecté avec une variable session
+                $_SESSION['admin']=1;
                 header("Location: /fff/index.php?uc=accueil");
             }
         }else{
@@ -27,26 +27,26 @@ switch($action){
         }
         break;
     }
-    case 'deconnexion': // On enleve toutes les variables de session
+    case 'deconnexion':
     {
         session_destroy();
         header("Location: /fff/index.php?uc=GestionAdmin&action=connexion");
         break;
     }
-    case 'VoirClubs': // on affiche tout les clubs dans la vue clubs grâce à la fonction getLesClubs
+    case 'VoirClubs':
     {
         $LesClubs = $pdo->getLesClubs();
         include("vues/v_clubs.php");
         break;
     }
-    case 'VoirJoueurs': // on affiche tout les joueurs dans la vue joueurs
+    case 'VoirJoueurs':
     {
          $lesJoueurs = $pdo->getLesJoueurs();
-         $LesCategories = $pdo->getLesCategories(); // On recupere les categories pour le champ rechercher
+         $LesCategories = $pdo->getLesCategories();
          include ("vues/v_joueurs.php");
         break;
     }
-    case 'Rechercher': // On fais une recherche par categorie grâce à la fonction resultRecherche
+    case 'Rechercher':
     {
         $idcat = $_REQUEST['idcat'];
         $lesJoueurs = $pdo->resultRecherche($idcat);
@@ -54,7 +54,7 @@ switch($action){
         include ("vues/v_joueurs.php");
         break;
     }
-    case 'VoirJoueursDuClub': // On affiche les joueurs d'un club précis passé en parametre dans la fonction getLesJoueursDeClub
+    case 'VoirJoueursDuClub':
     {
         $idc = $_REQUEST['club'];
         $lesJoueurs = $pdo->getLesJoueursDeClub($idc);
@@ -62,14 +62,13 @@ switch($action){
         include("vues/v_joueurs.php");
         break;
     }
-    case 'AjouterClub': // On ajoute un club avec les données passé dans la vue clubs avec la fonction ajouterclub et on affiche la liste des clubs
+    case 'AjouterClub':
     {
-        if(isset($_REQUEST['nom']) && (isset($_REQUEST['ville']) && (isset($_REQUEST['nomdirigeant']) && (isset($_REQUEST['prenomdirigeant']))))){
+        if(isset($_REQUEST['nom']) && (isset($_REQUEST['ville']) && (isset($_REQUEST['nomdirigeant']) ))){
             $nom = $_REQUEST['nom'];
             $ville = $_REQUEST['ville'];
             $nomdirigeant = $_REQUEST['nomdirigeant'];
-            $prenomdirigeant = $_REQUEST['prenomdirigeant'];
-            $pdo->ajouterclub ($nom, $ville, $nomdirigeant, $prenomdirigeant);
+            $pdo->ajouterclub ($nom, $ville, $nomdirigeant);
             $LesClubs = $pdo->getLesClubs();
             include("vues/v_clubs.php");
         }else{
@@ -77,29 +76,27 @@ switch($action){
         }
         break;
     }
-    case 'ModifierClub': /* On affiche les cases pour modifier le club avec les champ actuel et dès qu'il y a une modification,
-     On modifie un club grace a son id et la fonction modifierclub */
+    case 'ModifierClub':
     {
-        $idc = $_REQUEST['club'];
-        if(isset($_REQUEST['nom']) && (isset($_REQUEST['ville']) && (isset($_REQUEST['nomdirigeant']) && (isset($_REQUEST['prenomdirigeant']))))){
+        var_dump($_REQUEST);
+
+        if(isset($_REQUEST['valider'])){
+            $idc = $_REQUEST['club'];
             $nom = $_REQUEST['nom'];
             $ville = $_REQUEST['ville'];
             $nomdirigeant = $_REQUEST['nomdirigeant'];
-            $prenomdirigeant = $_REQUEST['prenomdirigeant'];
-            $pdo->modifierclub ($idc, $nom, $ville, $nomdirigeant, $prenomdirigeant);
-            $LesClubs = $pdo->getLesClubs();
-            include ("vues/v_clubs.php");
+            $pdo->modifierclub ($idc, $nom, $ville, $nomdirigeant);
+            echo "SALOOOOOOOOOOOOOOOOOOOOOOOO";
+              $LeClub = $pdo->getFicheClub ($idc);
+            include ("vues/v_clubfiche.php");
         }else{
+            $idc = $_REQUEST['club'];
             $LeClub = $pdo->getFicheClub ($idc);
-            $nom= $LeClub[0]['nom'];
-            $ville = $LeClub[0]['ville'];
-            $nomdirigeant = $LeClub[0]['nomdirigeant'];
-            $prenomdirigeant = $LeClub[0]['prenomdirigeant'];
             include("vues/v_modifierclub.php");
         }
         break;
     }
-   case 'SupprimerClub' : // On supprime un club avec la fonction SupprimerClub
+   case 'SupprimerClub' :
    {
        $idc = $_REQUEST['idc'];
        $pdo->SupprimerClub($idc);
@@ -108,68 +105,70 @@ switch($action){
        break;
    }
 
-   case 'AjouterJoueur': // On ajoute un joueur avec les données passés dans la vue clubs avec la fonction ajouterjoueur et on affiche la liste des joueurs
+   case 'AjouterJoueur':
    {
-       if(isset($_REQUEST['nom']) && (isset($_REQUEST['prenom']) && (isset($_REQUEST['idcat'])  && (isset($_REQUEST['idc']) && (isset($_REQUEST['nlicence'])&& (isset($_REQUEST['datenaiss']))))))){
+       if(isset($_REQUEST['nom']) && (isset($_REQUEST['prenom']) && (isset($_REQUEST['idcat'])  && (isset($_REQUEST['idc']) )))){
            $nom = $_REQUEST['nom'];
            $prenom = $_REQUEST['prenom'];
-           $datenaiss = $_REQUEST['datenaiss'];
            $idcat = $_REQUEST['idcat'];
-           $nlicence =$_REQUEST['nlicence'];
            $idc = $_REQUEST['idc'];
-           $pdo->ajouterjoueur ($nom, $prenom, $datenaiss, $nlicence, $idc, $idcat);
+           $pdo->ajouterjoueur ($nom, $prenom, $idc, $idcat);
            $lesJoueurs = $pdo->getLesJoueurs();
            $LesCategories = $pdo->getLesCategories();
            include("vues/v_joueurs.php");
        }else{
-           $LesCategories = $pdo->getLesCategories(); // si les champs ne sont pas renseigné ou que l'on vient juste d'arriver sur ajouter joueur on affiche la vue ajouterjoueur
+           $LesCategories = $pdo->getLesCategories();
            $LesClubs = $pdo->getLesClubs();
            include ("vues/v_ajouterjoueur.php");
        }
        break;
    }
-    case 'ModifierJoueur': /* On affiche les cases pour modifier le joueur avec les champ actuel et dès qu'il y a une modification,
-     On modifie un joueur grace a son id et la fonction modifierjoueur */
+    case 'ModifierJoueur':
     {
-        $idj = $_REQUEST['idjoueur'];
-        if(isset($_REQUEST['nom']) && (isset($_REQUEST['prenom']) && (isset($_REQUEST['datenaiss']) && (isset($_REQUEST['nlicence']))))){
+        var_dump($_REQUEST);
+        if(isset($_REQUEST['valider'])){
+             $idj = $_REQUEST['idjoueur'];
             $nom = $_REQUEST['nom'];
             $prenom = $_REQUEST['prenom'];
-            $datenaiss = $_REQUEST['datenaiss'];
-            $nlicence = $_REQUEST['nlicence'];
             $idcat = $_REQUEST['idcat'];
             $idc = $_REQUEST['idc'];
-            $pdo->modifierjoueur ($idj, $nom, $prenom, $datenaiss, $nlicence, $idcat, $idc);
+            $pdo->modifierjoueur ($idj, $nom, $prenom, $idcat, $idc);
             $LeJoueur = $pdo->getFicheJoueur($idj);
-            $Historique = $pdo->getHistorique($idj); // On recupere l'historique du joueur
             include ("vues/v_joueurfiche.php");
         }else{
-            $unJoueur = $pdo->getFicheJoueur($idj);
-            $nom = $unJoueur[0]['nom'];
-            $prenom = $unJoueur[0]['prenom'];
-            $oldidcat = $unJoueur[0]['idcat'];
-            $datenaiss = $unJoueur[0]['datenaiss'];
-            $nlicence = $unJoueur[0]['nlicence'];
-            $oldidc = $unJoueur[0]['idc'];
-            $LesClubs = $pdo->getLesClubs(); // On recupere les clubs pour afficher une liste deroulante
-            $LesCategories = $pdo->getLesCategories(); // On recupere les categories pour afficher une liste deroulante
+           
+             $idj = $_REQUEST['idjoueur'];
+             $unJoueur = $pdo->getFicheJoueur($idj);
+            $LesClubs = $pdo->getLesClubs();
+            $LesCategories = $pdo->getLesCategories();
             include("vues/v_modifierjoueur.php");
             break;
         }
         break;
     }
-    case 'FicheClub': //On affiche la fiche du club
+
+   case 'SupprimerJoueur':
+   {
+       $idj = $_REQUEST['idj'];
+       $pdo->SupprimerJoueurs($idj);
+       $lesJoueurs = $pdo->getLesJoueurs();
+       include ("vues/v_joueurs.php");
+       break;
+   }
+
+
+
+    case 'FicheClub':
     {
         $idc = $_REQUEST['club'];
         $LeClub = $pdo->getFicheClub($idc);
         include("vues/v_clubfiche.php");
         break;
     }
-    case 'FicheJoueur': // On affiche la fiche du joueur
+    case 'FicheJoueur':
     {
         $idjoueur = $_REQUEST['idjoueur'];
         $LeJoueur = $pdo->getFicheJoueur($idjoueur);
-        $Historique = $pdo->getHistorique($idjoueur);
         include("vues/v_joueurfiche.php");
         break;
     }
