@@ -1,6 +1,6 @@
 <form method="POST" action="index.php?uc=GestionAdmin&action=ModifierClub">
 <?php
-foreach($LeClub as $unClub) // Affiche la liste des clubs
+foreach($LeClub as $unClub) 
 {
     $idc = $unClub['idc'];
     $club = $unClub['nom'];
@@ -28,8 +28,8 @@ foreach($LeClub as $unClub) // Affiche la liste des clubs
         </p>
 
         <p>
-            <label for="nomdirigeant">Nom du dirigeant :</label>
-            <input id="nomdirigeant" type="text" name="nomdirigeant" size="10" maxlength="10">
+            <label for="nomdirigeant">Nom du directeur :</label>
+            <input id="nomdirigeant" type="text" name="nomDirecteur" size="10" maxlength="10">
            
         </p>
 

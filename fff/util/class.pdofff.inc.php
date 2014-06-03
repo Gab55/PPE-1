@@ -30,7 +30,7 @@ class Pdofff
         return Pdofff::$monPdofff;
     }
 
-    public function testLogAdmin($l, $p)
+    public function Connexion($l, $p)
     {
         $req = "select count(*) from compte where user = '".$l."' and mdp ='".$p."'";
         $res = Pdofff::$monPdo->query($req);
@@ -47,15 +47,15 @@ class Pdofff
         return $lesClubs;
     }
 
-    public function ajouterclub ($nom, $ville, $nomdirigeant)
+    public function ajouterclub ($nom, $ville, $nomDirecteur)
     {
-        $req = "CALL `ajout_club`('".$nom."', '".$ville."', '".$nomdirigeant."' );";
+        $req = "CALL `ajout_club`('".$nom."', '".$ville."', '".$nomDirecteur."' );";
         Pdofff::$monPdo->query($req);
     }
 
-    public function modifierclub($idc, $nom, $ville, $nomdirigeant)
+    public function modifierclub($idc, $nom, $ville, $nomDirecteur)
     {
-        $req = "UPDATE clubs SET nom='".$nom."', ville='".$ville."', nomdirigeant = '".$nomdirigeant."' where idc='".$idc."';";
+        $req = "UPDATE clubs SET nom='".$nom."', ville='".$ville."', nomDirecteur = '".$nomDirecteur."' where idc='".$idc."';";
         $res = Pdofff::$monPdo->exec($req);
         return $res;
 
@@ -68,7 +68,7 @@ class Pdofff
     }
 
 
-    public function getFicheClub($idc)
+    public function InfoClub($idc)
     {
         $req = "select * from clubs where idc='".$idc."'";
         $res = Pdofff::$monPdo->query($req);
@@ -115,7 +115,7 @@ class Pdofff
 
 
 
-    public function getFicheJoueur($idj)
+    public function InfoJoueur($idj)
     {
         $req = "select * from joueurs where idj='".$idj."'";
         $res = Pdofff::$monPdo->query($req);

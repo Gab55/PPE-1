@@ -17,8 +17,8 @@
     
     <p>
     
-        <label for="nomdirigeant">Nom du dirigeant :</label>
-        <input id="nomdirigeant" type="text" name="nomdirigeant" value="" size="10" >
+        <label for="nomdirigeant">Nom du directeur :</label>
+        <input id="nomdirigeant" type="text" name="nomDirecteur" value="" size="10" >
     
     </p>
 

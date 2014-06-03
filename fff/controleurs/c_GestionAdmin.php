@@ -14,7 +14,7 @@ switch($action){
             $log = $_POST['login'];
             $mdp = $_POST['pass'];
 
-            $resu = $pdo->testLogAdmin($log, $mdp);
+            $resu = $pdo->Connexion($log, $mdp);
 
             if($resu[0] == 0){
                 header("Location: /fff/index.php?uc=GestionAdmin&action=connexion");
@@ -64,11 +64,11 @@ switch($action){
     }
     case 'AjouterClub':
     {
-        if(isset($_REQUEST['nom']) && (isset($_REQUEST['ville']) && (isset($_REQUEST['nomdirigeant']) ))){
+        if(isset($_REQUEST['nom']) && (isset($_REQUEST['ville']) && (isset($_REQUEST['nomDirecteur']) ))){
             $nom = $_REQUEST['nom'];
             $ville = $_REQUEST['ville'];
-            $nomdirigeant = $_REQUEST['nomdirigeant'];
-            $pdo->ajouterclub ($nom, $ville, $nomdirigeant);
+            $nomDirecteur = $_REQUEST['nomDirecteur'];
+            $pdo->ajouterclub ($nom, $ville, $nomDirecteur);
             $LesClubs = $pdo->getLesClubs();
             include("vues/v_clubs.php");
         }else{
@@ -78,20 +78,18 @@ switch($action){
     }
     case 'ModifierClub':
     {
-        var_dump($_REQUEST);
 
         if(isset($_REQUEST['valider'])){
             $idc = $_REQUEST['club'];
             $nom = $_REQUEST['nom'];
             $ville = $_REQUEST['ville'];
-            $nomdirigeant = $_REQUEST['nomdirigeant'];
-            $pdo->modifierclub ($idc, $nom, $ville, $nomdirigeant);
-            echo "SALOOOOOOOOOOOOOOOOOOOOOOOO";
-              $LeClub = $pdo->getFicheClub ($idc);
+            $nomDirecteur = $_REQUEST['nomDirecteur'];
+            $pdo->modifierclub ($idc, $nom, $ville, $nomDirecteur);
+              $LeClub = $pdo->InfoClub ($idc);
             include ("vues/v_clubfiche.php");
         }else{
             $idc = $_REQUEST['club'];
-            $LeClub = $pdo->getFicheClub ($idc);
+            $LeClub = $pdo->InfoClub ($idc);
             include("vues/v_modifierclub.php");
         }
         break;
@@ -125,7 +123,7 @@ switch($action){
    }
     case 'ModifierJoueur':
     {
-        var_dump($_REQUEST);
+        
         if(isset($_REQUEST['valider'])){
              $idj = $_REQUEST['idjoueur'];
             $nom = $_REQUEST['nom'];
@@ -133,12 +131,12 @@ switch($action){
             $idcat = $_REQUEST['idcat'];
             $idc = $_REQUEST['idc'];
             $pdo->modifierjoueur ($idj, $nom, $prenom, $idcat, $idc);
-            $LeJoueur = $pdo->getFicheJoueur($idj);
+            $LeJoueur = $pdo->InfoJoueur($idj);
             include ("vues/v_joueurfiche.php");
         }else{
            
              $idj = $_REQUEST['idjoueur'];
-             $unJoueur = $pdo->getFicheJoueur($idj);
+             $unJoueur = $pdo->InfoJoueur($idj);
             $LesClubs = $pdo->getLesClubs();
             $LesCategories = $pdo->getLesCategories();
             include("vues/v_modifierjoueur.php");
@@ -161,14 +159,14 @@ switch($action){
     case 'FicheClub':
     {
         $idc = $_REQUEST['club'];
-        $LeClub = $pdo->getFicheClub($idc);
+        $LeClub = $pdo->InfoClub($idc);
         include("vues/v_clubfiche.php");
         break;
     }
     case 'FicheJoueur':
     {
         $idjoueur = $_REQUEST['idjoueur'];
-        $LeJoueur = $pdo->getFicheJoueur($idjoueur);
+        $LeJoueur = $pdo->InfoJoueur($idjoueur);
         include("vues/v_joueurfiche.php");
         break;
     }

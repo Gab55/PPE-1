@@ -16,7 +16,7 @@
         </p>
 
         <p>
-            <!----On fais une liste déroulante des categories---->
+            
             <label for="idcat">Categorie :</label>
             <select name='idcat'>
                 <?php

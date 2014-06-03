@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Sam 31 Mai 2014 à 16:33
+-- Généré le :  Ven 30 Mai 2014 à 21:34
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -17,21 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données :  `ggiroud-ppe1`
+-- Base de données :  `mlg`
 --
-
-DELIMITER $$
---
--- Procédures
---
-CREATE DEFINER=`root`@`localhost` PROCEDURE `ajout_club`(IN `nom` VARCHAR(100), IN `ville` VARCHAR(100), IN `nomdirigeant` VARCHAR(100))
-    NO SQL
-BEGIN 
-INSERT INTO `clubs` ( `idc` , `nom`, `ville`, `nomdirigeant` ) 
-VALUES ( '' , nom, ville, nomdirigeant ); 
-END$$
-
-DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -68,17 +55,14 @@ CREATE TABLE IF NOT EXISTS `clubs` (
   `ville` varchar(50) NOT NULL,
   `nomdirigeant` varchar(50) NOT NULL,
   PRIMARY KEY (`idc`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Contenu de la table `clubs`
 --
 
 INSERT INTO `clubs` (`idc`, `nom`, `ville`, `nomdirigeant`) VALUES
-(9, 'Nancy', 'Nancy', 'TEST'),
-(10, 'PSG', 'Paris ', 'Gatien'),
-(12, 'clubtest2', 'Strasbourg', 'Gggagaga'),
-(13, 'USL', 'Ligny', 'Giroud');
+(9, 'Nancy', 'Nancy', 'TEST');
 
 -- --------------------------------------------------------
 
@@ -89,6 +73,7 @@ INSERT INTO `clubs` (`idc`, `nom`, `ville`, `nomdirigeant`) VALUES
 CREATE TABLE IF NOT EXISTS `compte` (
   `user` varchar(50) NOT NULL,
   `mdp` varchar(50) NOT NULL,
+  `mail` varchar(200) NOT NULL,
   `nom` varchar(50) NOT NULL,
   `prenom` varchar(50) NOT NULL,
   PRIMARY KEY (`user`)
@@ -98,8 +83,22 @@ CREATE TABLE IF NOT EXISTS `compte` (
 -- Contenu de la table `compte`
 --
 
-INSERT INTO `compte` (`user`, `mdp`, `nom`, `prenom`) VALUES
-('admin', 'password', 'admin', 'admin');
+INSERT INTO `compte` (`user`, `mdp`, `mail`, `nom`, `prenom`) VALUES
+('admin', 'password', '', 'admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `inscrire`
+--
+
+CREATE TABLE IF NOT EXISTS `inscrire` (
+  `idc` int(11) NOT NULL,
+  `idj` int(11) NOT NULL,
+  PRIMARY KEY (`idc`,`idj`),
+  KEY `idc` (`idc`),
+  KEY `idj` (`idj`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -116,20 +115,25 @@ CREATE TABLE IF NOT EXISTS `joueurs` (
   PRIMARY KEY (`idj`),
   KEY `idc` (`idc`),
   KEY `idcat` (`idcat`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
 
 --
 -- Contenu de la table `joueurs`
 --
 
 INSERT INTO `joueurs` (`idj`, `nom`, `prenom`, `idc`, `idcat`) VALUES
-(20, 'Douchet', 'Loic', 9, 5),
-(23, 'Douchet', 'Joris', 10, 2),
-(24, 'Giroud', 'Morgan', 13, 3);
+(20, 'Douchet', 'Loic', 9, 5);
 
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `inscrire`
+--
+ALTER TABLE `inscrire`
+  ADD CONSTRAINT `inscrire_ibfk_1` FOREIGN KEY (`idc`) REFERENCES `clubs` (`idc`),
+  ADD CONSTRAINT `inscrire_ibfk_2` FOREIGN KEY (`idj`) REFERENCES `joueurs` (`idj`);
 
 --
 -- Contraintes pour la table `joueurs`

@@ -40,21 +40,20 @@ a:hover span, a:focus span{
     <legend>Joueurs en liste </legend>
 
 <form method="POST" action="index.php?uc=GestionAdmin&action=Rechercher">
-<select name='idcat'>
+
 
 <?php
-foreach( $LesCategories as $UnCategorie){ // Fais une liste deroulante des categories pour la recherche
+foreach( $LesCategories as $UnCategorie){ 
         $idCat = $UnCategorie['idcat'];
         $nomCat = $UnCategorie['nomcategories'];
-        echo "<option value=\"".$idCat."\">". $nomCat."</option>";
+        
 }?>
-</select>
 
-<input type="submit" id="trigger2" value="valider" name="valider" style="margin-bottom: 5px; margin-top: 10px; width: 95px; height: 40px;" ><br />
+
 </form>
 
 <?php
-foreach( $lesJoueurs as $leJoueur) // Affiche la liste des joueurs
+foreach( $lesJoueurs as $leJoueur) 
 {
     $idj = $leJoueur['idj'];
     $Njoueur = $leJoueur['nom'];

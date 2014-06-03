@@ -41,7 +41,7 @@ foreach($LesClubs as $unClub)
 {
     $idc = $unClub['idc'];
     $club = $unClub['nom'];
-    $nomdirigeant = $unClub['nomdirigeant'];
+    $nomDirecteur = $unClub['nomDirecteur'];
     $ville = $unClub['ville'];
     ?>
     <center>
@@ -55,7 +55,7 @@ foreach($LesClubs as $unClub)
             <tr>
             	 	
             			<td><center><a href=index.php?uc=GestionAdmin&club=<?php echo $idc ?>&action=FicheClub><?php echo $club ?> <span> Cliquer ici pour modifier ou supprimer</span>   </a></center></td>
-                		<td><center><?php echo $nomdirigeant ?></center></td>
+                		<td><center><?php echo $nomDirecteur ?></center></td>
                 		<td><center><?php echo $ville ?></center></td>       	
             </tr>
 
