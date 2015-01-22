@@ -1,0 +1,2 @@
+ Voici les codes de connection :   Login : admin 
+                                   Mot de passe : password
