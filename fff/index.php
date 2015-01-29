@@ -1,5 +1,6 @@
+
 <?php
-session_start(); // On début de la session
+session_start(); // début
 
 require_once("util/class.pdofff.inc.php");
 include("vues/v_entete.php") ;
